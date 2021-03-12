@@ -1,0 +1,7 @@
+voiture_homepage:
+    path:     /
+    defaults: { _controller: VoitureBundle:Default:index }
+
+voiture_contact:
+    path:     /Contact
+    defaults: { _controller: VoitureBundle:Default:contact }

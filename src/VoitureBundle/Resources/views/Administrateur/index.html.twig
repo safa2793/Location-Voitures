@@ -1,0 +1,399 @@
+{% block body %}
+    <html>
+    <head>
+        <title>Home Aministrateur  </title>
+        <link rel="stylesheet" href="{{asset('index/assets/css/main.css')}}" />
+        <noscript><link rel="stylesheet" href="{{asset('index/assets/css/noscript.css')}}" /></noscript>
+        <link href="{{asset('//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css')}}">
+        <script src="{{asset('//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('//code.jquery.com/jquery-1.11.1.min.js')}}"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto');
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .card{
+                width: 200px;
+                height: 600px;
+                background-color: #1E2B32;
+                border-radius: 10px 10px;
+            }
+
+
+            h3{
+                color: #FFFFFF;
+                font-family: 'Roboto', sans-serif;
+                margin-left: 1rem;
+            }
+
+            .iconM{
+                font-size: 18px;
+                margin-left: 170px;
+                color: #2f89fc;
+            }
+
+            .icon{
+                margin-right: 8px;
+            }
+
+            .body li a{
+                transition: 1s all;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                padding: 15px;
+                margin-left: -40px;
+                margin-top: 0px;
+                color: #fff;
+                list-style: none;
+                display: block;
+                border-top-right-radius: 10px 10px;
+                border-bottom-right-radius: 10px 10px;
+            }
+
+            li:hover{
+                transition: 1s all;
+
+                background-color: rgba(42, 56, 65, 0.82);
+                border-top-right-radius: 10px 10px;
+                border-bottom-right-radius: 10px 10px;
+                cursor: pointer;
+            }
+
+            .body > li{
+                float: left;
+            }
+
+            .body li ul{
+                background: #e0e0e0;
+                margin-left: 280px;
+                margin-top: -38px;
+                display: none;
+                position: absolute;
+                border-top-right-radius: 15px 15px;
+                border-bottom-right-radius: 15px 15px;
+            }
+
+            .body li:hover > ul{
+                display: block;
+                cursor: pointer;
+            }
+            @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+            body {
+                text-align:left;
+                background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+                color:#e0e0e0;
+                font-family:'Roboto';
+                background-image: url("{{asset('index/image/background.jpg')}}");
+
+
+            }
+
+            .diva {
+                display:inline-block;
+                overflow:hidden;
+                white-space:nowrap;
+                font-size:20px;
+                text-decoration-color: #e0e0e0;
+            }
+
+            .diva:first-of-type {    /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+                animation: showup 7s infinite;
+            }
+
+            .diva:last-of-type {
+                width:0px;
+                animation: reveal 7s infinite;
+            }
+
+            .diva:last-of-type span {
+                margin-left:-355px;
+                animation: slidein 7s infinite;
+            }
+
+            @keyframes showup {
+                0% {opacity:0;}
+                20% {opacity:1;}
+                80% {opacity:1;}
+                100% {opacity:0;}
+            }
+
+            @keyframes slidein {
+                0% { margin-left:-800px; }
+                20% { margin-left:-800px; }
+                35% { margin-left:0px; }
+                100% { margin-left:0px; }
+            }
+
+            @keyframes reveal {
+                0% {opacity:0;width:0px;}
+                20% {opacity:1;width:0px;}
+                30% {width:355px;}
+                80% {opacity:1;}
+                100% {opacity:0;width:355px;}
+            }
+            .vertical-nav {
+                min-width: 17rem;
+                width: 17rem;
+                height: 100vh;
+                position: fixed;
+                top: 55px;
+                left: 0;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+                transition: all 0.4s;
+            }
+
+            .page-content {
+                width: calc(100% - 17rem);
+                margin-left: 17rem;
+                transition: all 0.4s;
+            }
+
+            /* for toggle behavior */
+
+            #sidebar.active {
+                margin-left: -17rem;
+            }
+
+            #content.active {
+                width: 100%;
+                margin: 0;
+            }
+
+            @media (max-width: 768px) {
+                #sidebar {
+                    margin-left: -17rem;
+                }
+                #sidebar.active {
+                    margin-left: 0;
+                }
+                #content {
+                    width: 100%;
+                    margin: 0;
+                }
+                #content.active {
+                    margin-left: 17rem;
+                    width: calc(100% - 17rem);
+                }
+            }
+
+            .row{
+                margin-left:0px;
+                margin-right:0px;
+            }
+
+            #wrapper {
+                padding-left: 70px;
+                transition: all .4s ease 0s;
+                height: 100%
+            }
+
+            #sidebar-wrapper {
+                margin-left: 0px;
+                left: 0px;
+                width: 250px;
+                background: #222;
+                position: fixed;
+                height: 100%;
+                z-index: 10000;
+                transition: all .4s ease 0s;
+            }
+
+            .sidebar-nav {
+                display: block;
+                float: left;
+                width: 250px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            #page-content-wrapper {
+                padding-left: 0;
+                margin-left: 0;
+                width: 100%;
+                height: auto;
+            }
+            #wrapper.active {
+                padding-left: 150px;
+            }
+            #wrapper.active #sidebar-wrapper {
+                left: 150px;
+            }
+
+            #page-content-wrapper {
+                width: 100%;
+            }
+
+            #sidebar_menu li a, .sidebar-nav li a {
+                color: #999;
+                display: block;
+                float: left;
+                text-decoration: none;
+                width: 250px;
+                background: #252525;
+                border-top: 1px solid #373737;
+                border-bottom: 1px solid #1A1A1A;
+                -webkit-transition: background .5s;
+                -moz-transition: background .5s;
+                -o-transition: background .5s;
+                -ms-transition: background .5s;
+                transition: background .5s;
+            }
+            .sidebar_name {
+                padding-top: 25px;
+                color: #fff;
+                opacity: .7;
+            }
+
+            .sidebar-nav li {
+                line-height: 40px;
+                text-indent: 20px;
+            }
+
+            .sidebar-nav li a {
+                color: #999999;
+                display: block;
+                text-decoration: none;
+            }
+
+            .sidebar-nav li a:hover {
+                color: #fff;
+                background: rgba(255,255,255,0.2);
+                text-decoration: none;
+            }
+
+            .sidebar-nav li a:active,
+            .sidebar-nav li a:focus {
+                text-decoration: none;
+            }
+
+            .sidebar-nav > .sidebar-brand {
+                height: 65px;
+                line-height: 60px;
+                font-size: 18px;
+            }
+
+            .sidebar-nav > .sidebar-brand a {
+                color: #999999;
+            }
+
+            .sidebar-nav > .sidebar-brand a:hover {
+                color: #fff;
+                background: none;
+            }
+
+            #main_icon
+            {
+                float:right;
+                padding-right: 65px;
+                padding-top:20px;
+            }
+            .sub_icon
+            {
+                float:right;
+                padding-right: 65px;
+                padding-top:10px;
+            }
+            .content-header {
+                height: 65px;
+                line-height: 65px;
+            }
+
+            .content-header h1 {
+                margin: 0;
+                margin-left: 20px;
+                line-height: 65px;
+                display: inline-block;
+            }
+
+            @media (max-width:767px) {
+                #wrapper {
+                    padding-left: 70px;
+                    transition: all .4s ease 0s;
+                }
+                #sidebar-wrapper {
+                    left: 70px;
+                }
+                #wrapper.active {
+                    padding-left: 150px;
+                }
+                #wrapper.active #sidebar-wrapper {
+                    left: 150px;
+                    width: 250px;
+                    transition: all .4s ease 0s;
+                }
+            }
+
+
+        </style>
+    </head>
+
+
+    <body>
+    <header id="header">
+        <h1>GOS</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ path ("index_admin", { 'id': admin.AdminCIN }) }}">Home </a></li>
+                <li><a href="{{ path ("voiture_about") }}">About Us </a></li>
+                <li><a href="{{ path ("voiture_contact") }}">Contact</a></li>
+                <li><a href="{{ path("show_admin", { 'id': admin.AdminCIN }) }}">Voir profil </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav" id="sidebar">
+                    <li> <span class ="diva" >Hello {{ admin.prenom }} {{ admin.nom }}</span></li>
+                    <li><a  href="{{ path ("affichage_gestionnaire") }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                            </svg>Gérer les managers<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                    <li><a  href="{{ path ("affichage_client") }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                            </svg>Gérer les clients <span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                    <li><a  href="{{ path ("affichage_admin") }}"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                            </svg>Gérer les admins <span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <footer id="footer">
+
+            <!-- Icons -->
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            </ul>
+
+            <!-- Menu -->
+            <ul class="menu">
+                <li>&copy; Untitled</li><li>CopyRight</li>
+            </ul>
+
+        </footer>
+
+
+        <script src="{{asset('indexassets/js/jquery.min.js')}}"></script>
+        <script src="{{asset('indexassets/js/jquery.poptrox.min.js')}}"></script>
+        <script src="{{asset('indexassets/js/jquery.scrolly.min.js')}}"></script>
+        <script src="{{asset('indexassets/js/jquery.scrollex.min.js')}}"></script>
+        <script src="{{asset('indexassets/js/browser.min.js')}}"></script>
+        <script src="{{asset('indexassets/js/breakpoints.min.js')}}"></script>
+        <script src="{{asset('indexassets/js/util.js')}}"></script>
+        <script src="{{asset('indexassets/js/main.js')}}"></script>
+    </div>
+    </body>
+    </html>
+{% endblock %}

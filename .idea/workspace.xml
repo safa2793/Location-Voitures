@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d25e776b-6ade-4e65-b4c6-fcff9883d172" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/default/about.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/default/authentification.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/default/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Controller/AdministrateurController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Controller/ClientController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Controller/FactureController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Controller/GestionnaireController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Controller/ReservationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Controller/VoitureController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Entity/Administrateur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Entity/Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Entity/Facture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Entity/Gestionnaire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Entity/Reservation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Entity/Voiture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Form/AdministrateurForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Form/ClientForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Form/FactureForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Form/GestionnaireForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Form/ReservationForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Form/VoitureForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Administrateur/Recherche.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Administrateur/add.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Administrateur/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Administrateur/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Administrateur/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Administrateur/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Client/Recherche.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Client/add.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Client/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Client/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Client/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Client/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Facture/Recherche.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Facture/add.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Facture/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Facture/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Facture/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Gestionnaire/Recherche.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Gestionnaire/add.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Gestionnaire/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Gestionnaire/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Gestionnaire/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Gestionnaire/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Reservation/Add.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Reservation/Recherche.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Reservation/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Reservation/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Reservation/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Voiture/Recherche.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Voiture/add.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Voiture/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Voiture/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VoitureBundle/Resources/views/Voiture/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/js/jquery.scrollex.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/js/jquery.scrolly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/js/skel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/images/GOS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/images/pic01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/images/pic02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/images/pic03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/images/pic04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/aboutus/images/pic05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index/image/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index/image/voiture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/js/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/datepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/datepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/datepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/mdi-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/mdi-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login/vendor/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/css/shop-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/theme/vendor/jquery/jquery.slim.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="77114653-ef18-42d0-8f2a-17147c5cce2c" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1jjcf8Xcf4pfLEMnzgLoYvjIKve" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/login" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\LocationVoitures\web\login" />
+      <recent name="C:\wamp64\www\LocationVoitures\web\aboutus\images" />
+      <recent name="C:\wamp64\www\LocationVoitures\web\aboutus" />
+      <recent name="C:\wamp64\www\LocationVoitures\web\theme" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\LocationVoitures\web\index\image" />
+      <recent name="C:\wamp64\www\LocationVoitures\web\index" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="s generate:bunde" />
+      <command value="s generate:bundle" />
+      <command value="c dump-autoload" />
+      <command value="s doctrine:generate:entity" />
+      <command value="doctrine:cache:clear-metadata" />
+      <command value="s doctrine:database:drop" />
+      <command value="s doctrine:cache:clear-metadata" />
+      <command value="s doctrine:generate:entities Voiture" />
+      <command value="s doctrine:schema:update" />
+      <command value="s doctrine:database:drop --force" />
+      <command value="s doctrine:database:create" />
+      <command value="s doctrine:schema:drop --force" />
+      <command value="s doctrine:schema:create" />
+      <command value="s doctrine:schema:update --force" />
+      <command value="s doctrine:schema:validate" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d25e776b-6ade-4e65-b4c6-fcff9883d172" name="Default Changelist" comment="" />
+      <created>1604321041926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604321041926</updated>
+      <workItem from="1604321050218" duration="12676000" />
+      <workItem from="1604408075340" duration="9170000" />
+      <workItem from="1604752629276" duration="191000" />
+      <workItem from="1607341842235" duration="15280000" />
+      <workItem from="1607426208661" duration="6020000" />
+      <workItem from="1607448993697" duration="32000" />
+      <workItem from="1607510279816" duration="2486000" />
+      <workItem from="1607512794049" duration="12092000" />
+      <workItem from="1607597203045" duration="8555000" />
+      <workItem from="1607692661842" duration="9365000" />
+      <workItem from="1607782551370" duration="1222000" />
+      <workItem from="1607943045471" duration="2715000" />
+      <workItem from="1608025976997" duration="4895000" />
+      <workItem from="1608208440113" duration="8668000" />
+      <workItem from="1608290280774" duration="8440000" />
+      <workItem from="1608719781268" duration="18442000" />
+      <workItem from="1609160081703" duration="8207000" />
+      <workItem from="1609249699883" duration="4914000" />
+      <workItem from="1611133981064" duration="21646000" />
+      <workItem from="1611237766192" duration="6756000" />
+      <workItem from="1611316114718" duration="12270000" />
+      <workItem from="1611390837877" duration="604000" />
+      <workItem from="1612984043225" duration="3270000" />
+      <workItem from="1613032243657" duration="1424000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="434" y="187" key="#Notifications" timestamp="1604324748115">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="434" y="187" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1604324748115" />
+    <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607604796988">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607604796988" />
+    <state x="476" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1607602929437">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="476" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607602929437" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608027477640">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608027477640" />
+    <state x="407" y="240" key="ComposerCompositePathDialog" timestamp="1604321150904">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="407" y="240" key="ComposerCompositePathDialog/0.0.1366.728@0.0.1366.728" timestamp="1604321150904" />
+    <state x="463" y="104" key="FileChooserDialogImpl" timestamp="1608208563578">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608208563578" />
+    <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1607702200130">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607702200130" />
+    <state width="1323" height="125" key="GridCell.Tab.0.center" timestamp="1607702200129">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="125" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607702200129" />
+    <state width="1323" height="125" key="GridCell.Tab.0.left" timestamp="1607702200129">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="125" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607702200129" />
+    <state width="1323" height="125" key="GridCell.Tab.0.right" timestamp="1607702200130">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607702200130" />
+    <state x="429" y="86" key="NewPhpClassDialog" timestamp="1607693709680">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="429" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1607693709680" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1604408842157">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604408842157" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607694602821">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1607694602821" />
+    <state x="486" y="265" key="SymfonyPathDialog" timestamp="1604321221440">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="486" y="265" key="SymfonyPathDialog/0.0.1366.728@0.0.1366.728" timestamp="1604321221440" />
+    <state x="389" y="0" width="587" height="728" key="find.popup" timestamp="1608027218929">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="0" width="587" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1608027218929" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1611157510135">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1611157510135" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/VoitureBundle/Resources/views/Client/index.html.twig</url>
+          <line>367</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

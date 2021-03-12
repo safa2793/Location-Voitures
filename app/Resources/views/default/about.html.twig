@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <html>
+    <head>
+        <title>GOS</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{asset('aboutus/assets/css/main.css')}}" />
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+            body {
+                text-align:left;
+                background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+                color:#555;
+                font-family:'Roboto';
+        </style>
+    </head>
+    <body>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <header>
+                <h1>This is US </h1>
+                <p>Nous sommes une agence de location de voitures <br/> Pour apprendre mieux sur nos services SCROLL DOWN </p>
+            </header>
+            <a href="#main" class="button big scrolly">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Section -->
+        <section class="wrapper style1">
+            <div class="inner">
+                <!-- 2 Columns -->
+                <div class="flex flex-2">
+                    <div class="col col1">
+                        <div class="image round fit">
+                            <img src="{{asset('aboutus/images/GOS.png')}}" />
+                        </div>
+                    </div>
+                    <div class="col col2">
+                        <h3>GOS pour Location des voitures  </h3>
+                        <p>GOS est une société créée depuis l’année 2004 et dont l'activité consiste <br/> en la location des voitures de tourisme en Tunisie,<br/> son siège social est sis aux berges du lac 1 </p>
+                        <p>GOS met à votre disposition une gamme de voitures neuves et diversifiées <br/> ainsi que des voitures de haute gamme : Mercedes, Passat, Peugeot 407<br/>, des voitures  de 9 places, des microbus, mini bus et grands bus pour des prix raisonnables . GOS vous accorde une assistance 24/24, 7j/7.</p>
+                        <a href="#" class="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="copyright">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{asset('aboutus/assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('aboutus/assets/js/jquery.scrolly.min.js')}}"></script>
+    <script src="{{asset('aboutus/assets/js/jquery.scrollex.min.js')}}"></script>
+    <script src="{{asset('aboutus/assets/js/skel.min.js')}}"></script>
+    <script src="{{asset('aboutus/assets/js/util.js')}}"></script>
+    <script src="{{asset('aboutus/assets/js/main.js')}}"></script>
+
+    </body>
+    </html>
+{% endblock %}

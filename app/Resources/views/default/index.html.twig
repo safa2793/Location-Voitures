@@ -1,0 +1,76 @@
+
+
+{% block body %}
+<html>
+<head>
+    <link rel="stylesheet" href="{{asset('index/assets/css/main.css')}}" />
+    <noscript><link rel="stylesheet" href="{{asset('index/assets/css/noscript.css')}}" /></noscript>
+
+</head>
+<body >
+
+<header id="header">
+    <h1>GOS</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ path ("voiture_homepage") }}">Home </a></li>
+            <li><a href="#one">What We Do</a></li>
+            <li><a href="{{ path ("voiture_about") }}">About Us </a></li>
+            <li><a href="{{ path ("voiture_contact") }}">Contact</a></li>
+            <li><a href="{{ path ("voiture_authentification") }}">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="intro" class="main style1 dark fullscreen">
+    <div class="content">
+        <header>
+            <h2>Hey.</h2>
+        </header>
+        <p>Binevenue à  <strong>GOS </strong> une agence de location de voitures de luxe<br/></p>
+        <footer>
+            <a href="#one" class="button style2 down">More</a>
+        </footer>
+    </div>
+</section>
+<section id="one" class="main style2 right dark fullscreen">
+    <div class="content box style2">
+        <header>
+            <h2>What We Do</h2>
+        </header>
+        <p>GOS est une agence de location de voitures de tout types. Nous vous offrons le confort du transport.
+        Avec nos différentes gammes de véhicules, vous aurez un choix immense à faire.
+        Depuis 5 ans, nous travaillons pour vous garantir une meilleure expérience routière.  </p>
+    </div>
+</section>
+
+
+<footer id="footer">
+
+    <!-- Icons -->
+    <ul class="icons">
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+    </ul>
+
+    <!-- Menu -->
+    <ul class="menu">
+        <li>&copy; Untitled</li><li>CopyRight</a></li>
+    </ul>
+
+</footer>
+
+
+<script src="{{asset('indexassets/js/jquery.min.js')}}"></script>
+<script src="{{asset('indexassets/js/jquery.poptrox.min.js')}}"></script>
+<script src="{{asset('indexassets/js/jquery.scrolly.min.js')}}"></script>
+<script src="{{asset('indexassets/js/jquery.scrollex.min.js')}}"></script>
+<script src="{{asset('indexassets/js/browser.min.js')}}"></script>
+<script src="{{asset('indexassets/js/breakpoints.min.js')}}"></script>
+<script src="{{asset('indexassets/js/util.js')}}"></script>
+<script src="{{asset('indexassets/js/main.js')}}"></script>
+
+
+</body></html>
+{% endblock %}

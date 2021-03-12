@@ -1,0 +1,177 @@
+voiture:
+    resource: "@VoitureBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+voiture_homepage:
+    path:     /
+    defaults: { _controller: VoitureBundle:Default:index }
+voiture_contact:
+    path:     /Contact
+    defaults: { _controller: VoitureBundle:Default:contact }
+
+voiture_about:
+    path:     /About
+    defaults: { _controller: VoitureBundle:Default:about }
+
+voiture_authentification:
+    path:     /login
+    defaults: { _controller: VoitureBundle:Default:login }
+
+Affichage_resa:
+    path : /resa
+    defaults : { _controller: VoitureBundle:Reservation:list}
+
+Ajout_resa:
+    path : /AddResa
+    defaults : { _controller: VoitureBundle:Reservation:Add}
+
+supprimer_resa:
+    path : /DelResa{id}
+    defaults : { _controller: VoitureBundle:Reservation:Delete}
+
+rechercher_resa:
+    path: /rechercherResa
+    defaults: {_controller: VoitureBundle:Reservation:Recherche}
+
+edit_resa:
+    path: /editResa{id}
+    defaults: {_controller: VoitureBundle:Reservation:edit}
+
+show_resa:
+    path: /showResa{id}
+    defaults: {_controller: VoitureBundle:Reservation:show}
+
+affichage_client:
+    path : /client
+    defaults : {_controller: VoitureBundle:Client:list}
+
+ajout_client:
+    path: /AddClient
+    defaults: {_controller : VoitureBundle:Client:add}
+
+supprimer_client:
+    path: /DelClient{id}
+    defaults : {_controller: VoitureBundle:Client:Delete}
+
+rechercher_client:
+    path: /rechercherClient
+    defaults : {_controller : VoitureBundle:Client:Recherche}
+
+edit_client:
+    path: /editClient{id}
+    defaults: {_controller: VoitureBundle:Client:edit}
+
+show_client:
+    path: /showClient{id}
+    defaults: {_controller: VoitureBundle:Client:show}
+
+index_client:
+    path: /IndexClient{id}
+    defaults: {_controller: VoitureBundle:Client:index}
+
+affichage_Voiture:
+    path : /Voiture
+    defaults : {_controller : VoitureBundle:Voiture:list}
+
+ajout_voiture:
+    path : /AddVoiture
+    defaults: {_controller: VoitureBundle:Voiture:add}
+
+supprimer_voiture:
+    path : /DelVoiture{id}
+    defaults : {_controller : VoitureBundle:Voiture:Delete}
+
+rechercher_voiture:
+    path: /rechercherVoiture
+    defaults: {_controller : VoitureBundle:Voiture:Recherche}
+
+edit_voiture:
+    path: /editVoiture{id}
+    defaults: {_controller: VoitureBundle:Voiture:edit}
+
+show_voiture:
+    path: /showVoiture{id}
+    defaults: {_controller: VoitureBundle:Voiture:show}
+
+affichage_gestionnaire:
+    path : /gestionnaire
+    defaults: {_controller: VoitureBundle:Gestionnaire:list}
+
+ajout_gestionnaire:
+    path: /addGestionnaire
+    defaults: {_controller: VoitureBundle:Gestionnaire:add}
+
+supprimer_gestionnaire:
+    path : /DelGestionnaire{id}
+    defaults : {_controller : VoitureBundle:Gestionnaire:Delete}
+
+rechercher_gestionnaire:
+    path: /rechercherGestionnaire
+    defaults: {_controller : VoitureBundle:Gestionnaire:Recherche}
+
+edit_gestionnaire:
+    path: /editGestionnaire{id}
+    defaults: {_controller: VoitureBundle:Gestionnaire:edit}
+
+show_gestionnaire:
+    path: /showGestionnaire{id}
+    defaults: {_controller: VoitureBundle:Gestionnaire:show}
+
+index_gestionnaire:
+    path: /IndexGestionnaire{id}
+    defaults: {_controller: VoitureBundle:Gestionnaire:index}
+
+affichage_admin:
+    path : /admin
+    defaults: {_controller: VoitureBundle:Administrateur:list}
+
+ajout_admin:
+    path: /addAdmin
+    defaults: {_controller: VoitureBundle:Administrateur:add}
+
+supprimer_admin:
+    path : /DelAdmin{id}
+    defaults : {_controller : VoitureBundle:Administrateur:Delete}
+
+rechercher_admin:
+    path: /rechercherAdmin
+    defaults: {_controller : VoitureBundle:Administrateur:Recherche}
+edit_admin:
+    path: /editAdmin{id}
+    defaults: {_controller: VoitureBundle:Administrateur:edit}
+
+show_admin:
+    path: /showAdmin{id}
+    defaults: {_controller: VoitureBundle:Administrateur:show}
+
+index_admin:
+    path: /IndexAdmin{id}
+    defaults: {_controller: VoitureBundle:Administrateur:index}
+
+affichage_fact:
+    path : /fact
+    defaults: {_controller: VoitureBundle:Facture:list}
+
+ajout_fact:
+    path: /addFact
+    defaults: {_controller: VoitureBundle:Facture:add}
+
+supprimer_fact:
+    path : /DelFact{id}
+    defaults : {_controller : VoitureBundle:Facture:Delete}
+
+rechercher_fact:
+    path: /rechercherFact
+    defaults: {_controller : VoitureBundle:Facture:Recherche}
+
+edit_fact:
+    path: /editFact{id}
+    defaults: {_controller: VoitureBundle:Facture:edit}
+
+show_fact:
+    path: /showFact{id}
+    defaults: {_controller: VoitureBundle:Facture:show}
